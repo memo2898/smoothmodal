@@ -20,7 +20,9 @@ btn2.addEventListener("click",()=>{
     //1. Crear modal.
     const idModal = "3shsj"
     const headerContent =`<h1>Titulo del modal ${idModal}</h2>`
-    const bodyContent =`<p>Contenido del modal${idModal}</p>`
+    const bodyContent =`
+    <p>Contenido del modal${idModal}</p>
+    `
     const footerContent =`<p>Contenido del footer${idModal}</p>`
     smooth_modal_create(idModal,headerContent, bodyContent, footerContent)
     //2. Abrir modal.

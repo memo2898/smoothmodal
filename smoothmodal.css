@@ -19,20 +19,49 @@ body {
 
 .smooth_modal {
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    margin: 2% auto;
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
     animation: slideIn 0.3s;
+    border-radius: 5px;
 }
 
+.cont_header_smooth_modal {
+    display: flex;
+    padding: 1rem;
+    border-bottom: solid #dee2e6 1px;
+}
+.cont_body_smooth_modal {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+}
+.cont_footer_smooth_modal {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    border-top: solid #dee2e6 1px;
+}
+
+.cont_title_header_smooth_modal {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.cont_btn_close_header_smooth_modal {
+    display: flex;
+    width: 5%;
+    justify-content: end;
+}
 .smooth_modal_close {
     color: #aaa;
-    float: right;
+
     font-size: 28px;
     font-weight: bold;
 }
+
+
 
 .smooth_modal_close:hover,
 .smooth_modal_close:focus {

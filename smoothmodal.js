@@ -15,11 +15,17 @@ function smooth_modal_create(idModal, headerContent, bodyContent, footerContent)
     if (!modalVerificar) {
         modalContainer.innerHTML = `
             <div class="smooth_modal" id="smoothmodal-window-${id}">
-                <span class="smooth_modal_close" id="${idCerrarModal}">&times;</span>
+                
 
                 <!--Header start-->
                     <div class="cont_header_smooth_modal">
-                        ${headerContent}
+                        <div class="cont_title_header_smooth_modal">
+                            ${headerContent}
+                        </div>
+                        <div class="cont_btn_close_header_smooth_modal">
+                            <span class="smooth_modal_close" id="${idCerrarModal}">&times;</span>
+                        </div>
+                    
                     </div>
                 <!--Header end-->
 
